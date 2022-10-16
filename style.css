@@ -2,15 +2,99 @@
   box-sizing: border-box;
 }
 
-body {
+body, main {
   margin: 0;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%)
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 h1, h2, h3 {
   margin: 0;
 }
 
+p {
+  margin: 0px;
+  padding: 0px;
+}
 
+.newsletter-section {
+  background-color: white;
+  border-radius: .5em;
+  color: hsl(204, 43%, 93%);
+}
+
+.content-wrapper {
+  padding: 2em;
+}
+
+.newsletter__intro {
+  color: hsl(218, 22%, 67%);
+}
+
+.newsletter__intro-title {
+  color: hsl(179, 62%, 43%);
+}
+
+.newsletter__intro-cta-text {
+  color: hsl(71, 73%, 54%);
+  margin-top: 1.5em;
+}
+
+.newsletter__intro__text, .newsletter-col__text {
+  line-height: 1.5;
+  margin-top: .5em;
+}
+
+/* Monthly Subscription */
+
+.newsletter-col--darkblue {
+  background-color: #2bb3b1;
+  color: hsl(204, 43%, 93%);
+}
+
+.newsletter-col__price {
+  font-size: 2em;
+  margin-right: .5em;
+}
+
+.newsletter-col__button {
+  background-color: hsl(71, 73%, 54%);
+  border: 0px;
+  width: 100%;
+  padding: 1em 2em;
+  border-radius: .5em;
+  margin-top: 2em;
+}
+
+
+.newsletter-section__text--price-text {
+  font-size: 2rem;
+  margin-right: .3em;
+}
+
+.newsletter-section__text--faded {
+  color: hsl(203, 80%, 86%);
+}
+
+
+/* Why Us */
+
+.newsletter-col--lightblue {
+  background-color: #4abebd;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
