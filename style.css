@@ -1,11 +1,17 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-body, main {
+body,
+main {
   margin: 0;
-  height: 100vh;
-  background-color: hsl(204, 43%, 93%)
+  height: 90vh;
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 main {
@@ -19,7 +25,9 @@ main {
   margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -44,16 +52,29 @@ p {
 
 .newsletter__intro-title {
   color: hsl(179, 62%, 43%);
+  font-weight: 700;
 }
 
 .newsletter__intro-cta-text {
   color: hsl(71, 73%, 54%);
   margin-top: 1.5em;
+  font-weight: 700;
 }
 
-.newsletter__intro__text, .newsletter-col__text {
+
+.newsletter__intro__text,
+.newsletter-col__text {
   line-height: 1.5;
   margin-top: .5em;
+}
+
+.newsletter__intro__text {
+  color: #b8bcc4;
+  margin-top: 1em;
+}
+
+.newsletter-col__heading {
+  font-weight: 700;
 }
 
 /* Monthly Subscription */
@@ -64,29 +85,25 @@ p {
 }
 
 .newsletter-col__price {
-  font-size: 2em;
-  margin-right: .5em;
+  font-size: 2.5em;
+  margin-right: .2em;
+  font-weight: 700;
+}
+
+.newsletter-col__price-rate {
+  color: #59d2cf;
 }
 
 .newsletter-col__button {
   background-color: hsl(71, 73%, 54%);
   border: 0px;
   width: 100%;
-  padding: 1em 2em;
+  padding: .8em 2em;
   border-radius: .5em;
-  margin-top: 2em;
+  margin-top: 1.5em;
+  color: #f9fcd1;
+  font-size: 1.3rem;
 }
-
-
-.newsletter-section__text--price-text {
-  font-size: 2rem;
-  margin-right: .3em;
-}
-
-.newsletter-section__text--faded {
-  color: hsl(203, 80%, 86%);
-}
-
 
 /* Why Us */
 
@@ -96,5 +113,51 @@ p {
   border-bottom-right-radius: .5em;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.newsletter-col__list {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.newsletter-col__list__item+.newsletter-col__list__item {
+  margin-top: .2em;
+}
+
+/* Media Queries */
+
+@media (min-width: 600px) {
+  .newsletter-section {
+    max-width: 42em;
+  }
+
+  .content-wrapper {
+    padding: 2.5em;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .newsletter-col {
+    width: 100%;
+  }
+
+  .newsletter-col--darkblue {
+    border-bottom-left-radius: .5em;
+  }
+
+  .newsletter-col--lightblue {
+    border-bottom-left-radius: 0em;
+  }
+
+}
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
