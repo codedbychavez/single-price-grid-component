@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/frontend-mentor-single-price-grid-component-solution-sOCT31v-f0)
+- Live Site URL: [GitHub Pages](https://codedbychavez.github.io/single-price-grid-component/)
 
 ## My process
 
